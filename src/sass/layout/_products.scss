@@ -6,6 +6,12 @@
     margin: auto;
 }
 
+.products.container {
+    @media screen and (min-width:1200px) {
+    padding-top: 30px;        
+    }
+}
+
 .products__container {}
 
 .products__pretaitle {
@@ -25,6 +31,12 @@
         letter-spacing: 0.04em;
         margin-bottom: 18px;
     }
+
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }
 }
 
 .products__taitle {
@@ -43,6 +55,11 @@
         font-size: 48px;
         margin-bottom: 178px;
     }
+    @media screen and (min-width:1200px) {
+        font-size: 58px;
+        line-height: 1.14;
+        margin-bottom: 261px;
+    }
 }
 
 .products__list {
@@ -54,6 +71,9 @@
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
         gap: 16px;
+        }
+    @media screen and (min-width: 1200px) {
+        gap: 32px;
         }
 
 }
@@ -70,7 +90,12 @@
     @media screen and (min-width: 768px) {
         width: 224px;
         height: 473px;
+        }
 
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 535px;
+        
         }
 }
 
@@ -83,8 +108,13 @@
     @media screen and (min-width: 768px) {
         min-width: 224px;
         height: 224px;
+            transform: translateY(-50%);
         }
-        
+    @media screen and (min-width: 1200px) {
+            transform: translateY(-66%);
+        width: 368px;
+        height: 394px;
+        }
 }
 .strauberry {
     background: #FFB8CA;
@@ -114,6 +144,11 @@ background: #C2E297;
     @media screen and (min-width: 768px) {
     padding-top: 150px;
     }
+    @media screen and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 1.15;
+    padding-top: 165px;
+        }
 }
 
 .products__icon {
@@ -142,6 +177,13 @@ background: #C2E297;
         overflow: hidden;
         line-height: 1.76;
         
+        }
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    width: 241px;
+    height: 106px;
+    margin-bottom: 60px;
         }
 }
 
