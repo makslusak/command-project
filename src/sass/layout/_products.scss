@@ -49,7 +49,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 140px;
-   margin-bottom: 40px;
+    // margin-bottom: 40px;
+
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
         gap: 16px;
@@ -69,6 +70,7 @@
     @media screen and (min-width: 768px) {
         width: 224px;
         height: 473px;
+
         }
 }
 
@@ -108,6 +110,10 @@ background: #C2E297;
     text-transform: uppercase;
     color: $textWhiteColor;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+    padding-top: 150px;
+    }
 }
 
 .products__icon {
@@ -129,6 +135,14 @@ background: #C2E297;
     margin: auto;
     margin-top: 32px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        width: 160px;
+        height: 150px;
+        overflow: hidden;
+        line-height: 1.76;
+        
+        }
 }
 
 .products__link {
@@ -143,4 +157,11 @@ background: #C2E297;
 }
 .products__link svg{
     fill: $titleColor;
+}
+
+.hidden{
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+    }
 }
