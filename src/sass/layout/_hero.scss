@@ -1,0 +1,84 @@
+<<<<<<< Updated upstream
+=======
+.hero {
+  background-color: $secondaryColor;
+}
+.container {
+}
+.hero__container {
+  padding: 136px 82px 158px 20px;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  background-image: url(../images/hero/mobil/hero-icecream.png),
+    url(../images/hero/mobil/hero-ellipse.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom 0% left 79%, top 50% right 0px;
+  background-size: 171px, contain;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: url(../images/hero/mobil/hero-icecream.png),
+        url(../images/hero/mobil/hero-ellipse.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position: bottom 0% left 79%, top 50% right 0px;
+      background-size: 171px, 283px;
+    }
+  }
+}
+.hero__wraper {
+}
+.hero__main {
+}
+.hero__title {
+  display: block;
+  text-transform: uppercase;
+  max-width: 218px;
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  color: $textWhiteColor;
+  margin-bottom: 20px;
+  &--strong {
+    font-size: 48px;
+    line-height: 0.96;
+    color: $titleColor;
+  }
+}
+
+.button__hero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  line-height: 1.25;
+  border: none;
+  border-radius: 20px;
+  height: 24px;
+  &--red {
+    background-color: $titleColor;
+    color: $textWhiteColor;
+  }
+  &--white {
+    background-color: $textWhiteColor;
+    color: $titleColor;
+  }
+}
+
+.button__hero--white {
+}
+
+.hero__indicators {
+  display: none;
+}
+.hero__item {
+}
+.hero__description {
+  display: none;
+}
+.hero__text {
+}
+>>>>>>> Stashed changes
