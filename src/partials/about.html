@@ -6,10 +6,15 @@
     <picture></picture>
     <div class="about__container-position">
       <picture>
-        <source scrset="/src/images/about.png,
-                        /src/image/about@2.png">
-        <source>
-        <source>
+           <source srcset="./images/about-desctop@1.png,
+                       ./images/about-desctop@1.png"
+                        media="(min-width:1200px)"/>
+       <source srcset="./images/about-tablets@1.png,
+                       ./images/about-tablets@2.png"
+                        media="(min-width:768px)"/>
+        <source scrset="./images/about.png,
+                       ./images/about@2.png"
+                        media="(min-width:320px)"/>
       </picture>
     <img
       class="about__img"
