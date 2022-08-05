@@ -1,38 +1,98 @@
-.about {
-  background-color: $secondaryColor;
+.about.section {
+  background-color: #fff5f6;
+
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .about__text {
   font-family: $secondFontFamaly;
   font-size: 18px;
   line-height: 1.16;
+  text-transform: uppercase;
   color: $preTitleColor;
+
+  text-align: center;
+  margin-bottom: 15px;
 }
 .about__title {
   font-family: $secondFontFamaly;
   font-size: 34px;
   line-height: 1.14;
+  text-transform: uppercase;
   color: $titleColor;
+
+  text-align: center;
 }
 .about__img {
-  width: 100%;
-  @media screen and (min-width: 320px) {
-    width: 280px;
-    height: 279px;
-  }
+  width: 280px;
+  height: 279px;
+
+  margin-bottom: 40px;
 }
 .about__text-pre {
+  position: relative;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
   color: $secondaryTextColor;
-}
+  text-align: start;
 
-.about-text-after {
+  margin-bottom: 40px;
+  z-index: 99999;
+}
+.about__text-after {
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
   color: $mainTextColor;
+  text-align: start;
+
+  margin-bottom: 20px;
+  background-color: transparent;
+  z-index: 99999;
 }
-.about__text-img {
-  background-image: url('/src/images/aboutbg.jpg');
+.about__text-pre::after {
+  content: '';
+  position: absolute;
+
+  display: inline-block;
+  background-image: url('/src/images/aboutbg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  width: 100vw;
+  top: 70%;
+  left: 0;
+  right: 0;
+  transform: translateX(-20px);
+  transform: translateY(-70%);
+
+  // @media screen and (min-width: 480px) {
+  //   max-width: 480px;
+  // }
+}
+.about__text-container {
+  width: 220px;
+}
+.about__text-indent {
+  margin-bottom: 20px;
+}
+.about__button {
+  height: 44px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding-left: 37px;
+  padding-right: 37px;
+
+  color: $titleColor;
+  background: $textWhiteColor;
+  border-radius: 22px;
+  border: none;
 }
