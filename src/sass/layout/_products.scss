@@ -1,0 +1,118 @@
+.section {}
+
+.products {}
+
+.container {
+    margin: auto;
+}
+
+.products__container {}
+
+.products__pretaitle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    text-transform: uppercase;
+    color: $preTitleColor;
+    margin-bottom: 15px;
+}
+
+.products__taitle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $titleColor;
+    margin-bottom: 156px;
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+}
+
+.products__item {
+    position: relative;
+    border-radius: 24px;
+    padding-bottom: 40px;
+    margin-top: 140px;   
+    width: 280px;
+    height: 489px;
+    margin: auto;
+    
+}
+
+.products__img {
+    position: absolute;
+    min-width: 280px;
+    height: 280px;
+    transform:translateY(-50%);
+}
+.strauberry {
+    background: #FFB8CA;
+}
+
+.coffee {
+background: #F0D1A5;
+}
+
+.milkshakes{
+background: #C2E297;
+}
+
+.products__text {
+    padding-top: 180px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $textWhiteColor;
+    margin-bottom: 32px;
+}
+
+.products__icon {
+    margin: auto;
+    display: flex;
+}
+
+.products__content {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $textWhiteColor;
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.products__link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $primeryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.products__link svg{
+    fill: $titleColor;
+}
