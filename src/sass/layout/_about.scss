@@ -37,6 +37,7 @@
   font-family: $secondFontFamaly;
   font-size: 34px;
   line-height: 1.14;
+  font-weight: 400;
   text-transform: uppercase;
   color: $titleColor;
 
@@ -78,7 +79,7 @@
   color: $secondaryTextColor;
   text-align: start;
 
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   z-index: 99999;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -182,14 +183,26 @@
   border: none;
 }
 .about__container-position {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
 
   @media screen and (min-width: 1200px) {
     align-items: center;
+    gap: 99px;
   }
 }
 
 .about-after {
   margin-bottom: 40px;
+}
+.about__button::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/symbol-defs.svg#icon-vector');
+  width: 5px;
+  height: 8px;
+  fill: red;
 }
