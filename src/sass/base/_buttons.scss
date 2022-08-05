@@ -8,11 +8,16 @@
   color: $titleColor;
   border-radius: 22px;
   border: none;
-  height: 44px;
-  padding: 0 37px;
+  padding: 11px 37px;
   background-color: $mainbtnColor;
+
   &:hover,
   &:focus {
     background-color: #ecebeb;
   }
+}
+
+.button__text {
+  display: block;
+  margin-right: 12px;
 }
