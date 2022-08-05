@@ -1,9 +1,16 @@
 .about.section {
   background-color: #fff5f6;
+  position: relative;
 
   text-align: center;
   padding-top: 60px;
   padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
 }
 .about__text {
   font-family: $secondFontFamaly;
@@ -14,6 +21,17 @@
 
   text-align: center;
   margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+
+    letter-spacing: 0.04em;
+  }
 }
 .about__title {
   font-family: $secondFontFamaly;
@@ -23,12 +41,33 @@
   color: $titleColor;
 
   text-align: center;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 60px;
+  }
 }
 .about__img {
   width: 280px;
   height: 279px;
 
   margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 335px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 501px;
+    height: 501px;
+  }
 }
 .about__text-pre {
   position: relative;
@@ -41,8 +80,21 @@
 
   margin-bottom: 40px;
   z-index: 99999;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: 176%;
+
+    letter-spacing: 0.04em;
+  }
 }
 .about__text-after {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
@@ -52,32 +104,51 @@
   margin-bottom: 20px;
   background-color: transparent;
   z-index: 99999;
+  @media screen and(min-width:768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+
+    letter-spacing: 0.04em;
+  }
 }
-.about__text-pre::after {
+.about::before {
   content: '';
   position: absolute;
 
   display: inline-block;
   background-image: url('/src/images/aboutbg.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 200px;
+  background-size: 100%;
+  height: 100%;
+  top: 64%;
   width: 100vw;
-  top: 70%;
   left: 0;
   right: 0;
-  transform: translateX(-20px);
-  transform: translateY(-70%);
 
   // @media screen and (min-width: 480px) {
   //   max-width: 480px;
   // }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 .about__text-container {
-  width: 220px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 334px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
 }
 .about__text-indent {
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 .about__button {
   height: 44px;
@@ -95,4 +166,11 @@
   background: $textWhiteColor;
   border-radius: 22px;
   border: none;
+}
+.about__container-position {
+  display: flex;
+  justify-content: space-between;
+}
+.about-after {
+  margin-bottom: 40px;
 }
