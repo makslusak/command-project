@@ -18,6 +18,13 @@
     text-transform: uppercase;
     color: $preTitleColor;
     margin-bottom: 15px;
+    
+    @media screen and (min-width: 768px){
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        margin-bottom: 18px;
+    }
 }
 
 .products__taitle {
@@ -31,12 +38,23 @@
     text-transform: uppercase;
     color: $titleColor;
     margin-bottom: 156px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        margin-bottom: 178px;
+    }
 }
 
 .products__list {
     display: flex;
     flex-wrap: wrap;
     gap: 140px;
+   margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 16px;
+        }
+
 }
 
 .products__item {
@@ -48,6 +66,10 @@
     height: 489px;
     margin: auto;
     
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        }
 }
 
 .products__img {
@@ -55,6 +77,12 @@
     min-width: 280px;
     height: 280px;
     transform:translateY(-50%);
+
+    @media screen and (min-width: 768px) {
+        min-width: 224px;
+        height: 224px;
+        }
+        
 }
 .strauberry {
     background: #FFB8CA;
