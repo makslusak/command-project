@@ -166,22 +166,32 @@
   }
 }
 .about__button {
-  height: 44px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
   display: flex;
   align-items: center;
   text-align: center;
 
-  padding-left: 37px;
-  padding-right: 37px;
+  padding: 15px 37px;
 
   color: $titleColor;
   background: $textWhiteColor;
   border-radius: 22px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 }
+
 .about__container-position {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -198,11 +208,25 @@
 .about-after {
   margin-bottom: 40px;
 }
-.about__button::after {
-  content: '';
-  position: absolute;
-  background-image: url('../images/symbol-defs.svg#icon-vector');
-  width: 5px;
-  height: 8px;
-  fill: red;
+// .about__button::after {
+//   content: '';
+//   position: absolute;
+//   background-image: url('../images/symbol-defs.svg#icon-vector');
+//   width: 10px;
+//   height: 20px;
+//   fill: red;
+// }
+.about__svg {
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+}
+.about__use {
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+}
+
+.about__button:hover .button__text {
+  color: blue;
 }
