@@ -1,0 +1,228 @@
+.about.section {
+  background-color: #fff5f6;
+  position: relative;
+
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+  }
+}
+.about__text {
+  font-family: $secondFontFamaly;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: $preTitleColor;
+
+  text-align: center;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+
+    letter-spacing: 0.04em;
+  }
+}
+.about__title {
+  font-family: $secondFontFamaly;
+  font-size: 34px;
+  line-height: 1.14;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $titleColor;
+
+  text-align: center;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 60px;
+  }
+}
+.about__img {
+  width: 280px;
+  height: 279px;
+
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 335px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 501px;
+    height: 501px;
+  }
+}
+.about__text-pre {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: $secondaryTextColor;
+  text-align: start;
+
+  margin-bottom: 35px;
+  z-index: 99999;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 176%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: 176%;
+
+    letter-spacing: 0.04em;
+  }
+}
+.about__text-after {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+  color: $mainTextColor;
+  text-align: start;
+
+  margin-bottom: 20px;
+  background-color: transparent;
+  z-index: 99999;
+  @media screen and(min-width:768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 194%;
+
+    letter-spacing: 0.04em;
+  }
+}
+.about::before {
+  content: '';
+  position: absolute;
+
+  display: inline-block;
+  background-image: url('/src/images/aboutbg.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  top: 64%;
+  width: 100vw;
+  left: 0;
+  right: 0;
+
+  // @media screen and (min-width: 480px) {
+  //   max-width: 480px;
+  // }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    background-image: url('/src/images/about-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100%;
+    top: 25%;
+  }
+}
+.about__text-container {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 334px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+  }
+}
+.about__text-indent {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+.about__button {
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  padding: 15px 37px;
+
+  color: $titleColor;
+  background: $textWhiteColor;
+  border-radius: 22px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+}
+
+.about__container-position {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    gap: 99px;
+  }
+}
+
+.about-after {
+  margin-bottom: 40px;
+}
+// .about__button::after {
+//   content: '';
+//   position: absolute;
+//   background-image: url('../images/symbol-defs.svg#icon-vector');
+//   width: 10px;
+//   height: 20px;
+//   fill: red;
+// }
+.about__svg {
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+}
+.about__use {
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+}
