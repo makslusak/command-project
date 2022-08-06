@@ -270,19 +270,19 @@ background: #C2E297;
     margin: auto;
     border-color: transparent;
 }
-.products__button:hover,
-.products__button:focus {
-    background-image: url(./../images/love.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position:bottom;
-        padding-top: 10px;
-        transform: translateX(-50%);
-}
-.products__button:hover svg,
-.products__button:focus svg {
-    fill: transparent;
-}
+// .products__button:hover,
+// .products__button:focus {
+//     background-image: url(./../images/love.svg);
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-position:bottom;
+//         padding-top: 10px;
+//         transform: translateX(-50%);
+// }
+// .products__button:hover svg,
+// .products__button:focus svg {
+//     fill: transparent;
+// }
 
 .products__button svg{
     fill: $titleColor;
