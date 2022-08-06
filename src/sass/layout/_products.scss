@@ -1,12 +1,15 @@
-.section {}
 
-.products {}
+
+.products.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .container {
     margin: auto;
 }
 
-.products__container {}
+
 
 .products__pretaitle {
     font-family: 'Titan One';
@@ -18,6 +21,19 @@
     text-transform: uppercase;
     color: $preTitleColor;
     margin-bottom: 15px;
+    
+    @media screen and (min-width: 768px){
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        margin-bottom: 18px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        line-height: 1.13;
+        margin-bottom: 16px;
+    }
 }
 
 .products__taitle {
@@ -31,45 +47,144 @@
     text-transform: uppercase;
     color: $titleColor;
     margin-bottom: 156px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        margin-bottom: 158px;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 58px;
+        line-height: 1.14;
+        margin-bottom: 281px;
+    }
 }
 
 .products__list {
     display: flex;
     flex-wrap: wrap;
     gap: 140px;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        gap: 16px;
+        }
+    @media screen and (min-width: 1200px) {
+        gap: 32px;
+        }
+
 }
 
 .products__item {
     position: relative;
     border-radius: 24px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     margin-top: 140px;   
     width: 280px;
     height: 489px;
     margin: auto;
     
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 535px;
+        }
 }
 
-.products__img {
-    position: absolute;
-    min-width: 280px;
-    height: 280px;
-    transform:translateY(-50%);
-}
 .strauberry {
-    background: #FFB8CA;
+background: #FFB8CA;
 }
 
-.coffee {
+.coffe {
 background: #F0D1A5;
 }
 
 .milkshakes{
 background: #C2E297;
 }
+.strauberry::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./../images/ice_cream_srtawberry.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 224px;
+        background-position: 65%;
+        transform: translateY(-60%);
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 394px;
+        transform: translateY(-65%);
+        }
+}
+
+.coffe::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./../images/ice_cream_vanilla.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+    
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 224px;
+        background-position: 65%;
+        transform: translateY(-60%);
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 394px;
+        transform: translateY(-65%);
+        }
+}
+
+.milkshakes::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./../images/ice_cream_chocolate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 224px;
+        background-position: 65%;
+        transform: translateY(-60%);
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 394px;
+        transform: translateY(-65%);
+        }
+}
 
 .products__text {
-    padding-top: 180px;
+    padding-top: 160px;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -79,13 +194,41 @@ background: #C2E297;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $textWhiteColor;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
+    position: relative;
+
+    
+    @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    }
+    @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.15;
+    padding-top: 165px;
+    }
 }
 
-.products__icon {
-    margin: auto;
-    display: flex;
+.products__text::after{
+    content: "";
+        position: absolute;
+        transform: translateX(-50%);
+        display: block;
+        left: 50%;
+        background-image: url(./../images/dots.svg);
+        width: 26px;
+        height: 6px;
+        display: block;
+        top: 215px;
+
+    @media screen and (min-width: 768px) {
+    top: 173px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    top: 231px;
+    }
 }
+
 
 .products__content {
     font-family: 'DM Sans';
@@ -99,11 +242,24 @@ background: #C2E297;
     display: block;
     width: 200px;
     margin: auto;
-    margin-top: 32px;
+    padding-top: 35px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        width: 160px;
+        overflow: hidden;
+        line-height: 1.76;
+        
+        }
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    width: 241px;
+    margin-bottom: 60px;
+        }
 }
 
-.products__link {
+.products__button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -112,7 +268,29 @@ background: #C2E297;
     justify-content: center;
     align-items: center;
     margin: auto;
+    border-color: transparent;
 }
-.products__link svg{
+// .products__button:hover,
+// .products__button:focus {
+//     background-image: url(./../images/love.svg);
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//         background-position:bottom;
+//         padding-top: 10px;
+//         transform: translateX(-50%);
+// }
+// .products__button:hover svg,
+// .products__button:focus svg {
+//     fill: transparent;
+// }
+
+.products__button svg{
     fill: $titleColor;
+}
+
+.hidden{
+    @media screen and (min-width: 768px) {
+        display: none;
+        
+    }
 }

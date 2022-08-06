@@ -1,9 +1,21 @@
-<!-- ABOUT -->
-<section clas="about section">
+
+<section class="about section" id="howitsmade">
   <div class="about__container container">
     <p class="about__text">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
     <picture></picture>
+    <div class="about__container-position">
+      <picture>
+           <source srcset="./images/about-desctop@1.png,
+                       ./images/about-desctop@1.png"
+                        media="(min-width:1200px)"/>
+       <source srcset="./images/about-tablets@1.png,
+                       ./images/about-tablets@2.png"
+                        media="(min-width:768px)"/>
+        <source scrset="./images/about.png,
+                       ./images/about@2.png"
+                        media="(min-width:320px)"/>
+      </picture>
     <img
       class="about__img"
       width="501px"
@@ -11,20 +23,28 @@
       src="./images/about.png"
       alt="cow with milk"
     />
+    <div class="about__text-container">
     <p class="about__text-pre about__text-img">
       Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
       cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo
       fringilla.
     </p>
-    <p class="about-text-after">
+    <p class="about__text-after about__text-indent ">
       Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
       Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
       suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
       tincidunt.
-      <span class="about-text-after"
-        >Aliquam erat volutpat. Aenean accumsan.</span
-      >
+      <p class="about__text-after about-after"
+        >Aliquam erat volutpat. Aenean accumsan.</p>
     </p>
-    <button type="button" class="about__button">Read more</button>
+       <button type="button" class="about__button"><span class="button__text">Read more</span><span>
+        <svg width="7px" height="10px" class="about__svg">
+          <use  class="about__use" href="./images/symbol-defs.svg#btn-icon">
+          </use>
+        </svg>
+       </span>
+      </button>
+    </div>
+  </div>
   </div>
 </section>
