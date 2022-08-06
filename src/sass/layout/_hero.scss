@@ -113,10 +113,18 @@
   &--red {
     background-color: $titleColor;
     color: $textWhiteColor;
+    &:hover,
+    &:focus {
+      background-color: #d41342;
+    }
   }
   &--white {
     background-color: $textWhiteColor;
     color: $titleColor;
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 }
 

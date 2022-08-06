@@ -10,8 +10,8 @@
   border: none;
   padding: 11px 37px;
   background-color: $mainbtnColor;
-  & :hover,
-  & :focus {
+  &:hover,
+  &:focus {
     background-color: #ecebeb;
   }
 }
