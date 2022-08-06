@@ -2,6 +2,7 @@
   background-color: $secondaryColor;
   @media screen and(min-width:768px) {
     position: absolute;
+    z-index: 10;
     top: 0;
     left: 50%;
     transform: translate(-50%);
@@ -47,6 +48,7 @@
 }
 .header__mobil {
   position: absolute;
+  z-index: 3;
   top: 0;
   right: 0;
   width: 100vw;
@@ -61,6 +63,9 @@
     align-self: center;
     width: 209px;
     margin-bottom: 19px;
+  }
+  @media screen and(min-width:768px) {
+    width: 254px;
   }
 }
 .header__nav {
