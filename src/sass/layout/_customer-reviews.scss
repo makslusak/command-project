@@ -109,7 +109,9 @@
 .reviews__bgc::before {
   content: '';
   position: absolute;
+
   background-image: url(./images/customer-reviews/quotes.svg);
+
   fill: #e1e1e1;
   width: 54px;
   height: 40px;
@@ -142,6 +144,7 @@
   content: '';
   position: absolute;
   background-image: url(./images/customer-reviews/ellipsis.svg);
+
   width: 32px;
   height: 4px;
   left: 50%;
@@ -159,6 +162,7 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+
   background-image: url(./images/customer-reviews/home.png);
   background-size: cover;
   background-color: transparent;
