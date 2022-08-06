@@ -1,6 +1,9 @@
-.section {}
 
-.products {}
+
+.products.section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .container {
     margin: auto;
@@ -66,7 +69,6 @@
     display: flex;
     flex-wrap: wrap;
     gap: 140px;
-    // margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
@@ -81,7 +83,7 @@
 .products__item {
     position: relative;
     border-radius: 24px;
-    padding-bottom: 40px;
+    // padding-bottom: 40px;
     margin-top: 140px;   
     width: 280px;
     height: 489px;
@@ -99,37 +101,58 @@
         }
 }
 
-.products__img {
-    position: absolute;
-    min-width: 280px;
-    height: 280px;
-    transform:translateY(-50%);
-
-    @media screen and (min-width: 768px) {
-        min-width: 224px;
-        height: 224px;
-            transform: translateY(-50%);
-        }
-    @media screen and (min-width: 1200px) {
-            transform: translateY(-66%);
-        width: 368px;
-        height: 394px;
-        }
-}
 .strauberry {
-    background: #FFB8CA;
+background: #FFB8CA;
 }
 
-.coffee {
+.coffe {
 background: #F0D1A5;
 }
 
 .milkshakes{
 background: #C2E297;
 }
+.strauberry::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./../images/ice_cream_srtawberry.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.coffe::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./../images/ice_cream_vanilla.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.milkshakes::before {
+    content: '';
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-image: url(./../images/ice_cream_chocolate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transform: translateY(-50%);
+    position: absolute;
+}
 
 .products__text {
-    padding-top: 180px;
+    padding-top: 160px;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -139,8 +162,10 @@ background: #C2E297;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $textWhiteColor;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
+    position: relative;
 
+    
     @media screen and (min-width: 768px) {
     padding-top: 150px;
     }
@@ -148,13 +173,22 @@ background: #C2E297;
     font-size: 32px;
     line-height: 1.15;
     padding-top: 165px;
-        }
+    }
 }
 
-.products__icon {
-    margin: auto;
-    display: flex;
+.products__text::after{
+    content: "";
+        position: absolute;
+        transform: translateX(-50%);
+        display: block;
+        left: 50%;
+        background-image: url(./../images/dots.svg);
+        width: 26px;
+        height: 6px;
+        display: block;
+        top: 215px;
 }
+
 
 .products__content {
     font-family: 'DM Sans';
@@ -168,7 +202,7 @@ background: #C2E297;
     display: block;
     width: 200px;
     margin: auto;
-    margin-top: 32px;
+    padding-top: 35px;
     margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
@@ -187,7 +221,7 @@ background: #C2E297;
         }
 }
 
-.products__link {
+.products__button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -196,8 +230,9 @@ background: #C2E297;
     justify-content: center;
     align-items: center;
     margin: auto;
+    border-color: transparent;
 }
-.products__link svg{
+.products__button svg{
     fill: $titleColor;
 }
 
