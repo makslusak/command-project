@@ -7,19 +7,24 @@
                 </svg>
             </a>
         </div>
+        <div class="button__container">
         <button class="burger" type="button" data-modal-open>
             <svg class="burger__icon" width="20px" height="12px">
                 <use href="./images/symbol-defs.svg#btn-menu"></use>
             </svg>
         </button>
-        <div class="header__mobil" data-modal>
+        <button type="button" class="button__main button--clone"><span class="button__text">Buy now</span><svg width="7px" height="10px">
+                <use href="./images/symbol-defs.svg#btn-icon"></use>
+            </svg></button>
+            </div>
+        <div class="header__mobil is-hidden" data-modal>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                    <li class="header__item"><a href="#" class="header__link">About us</a></li>
-                    <li class="header__item"><a href="#" class="header__link">How it’s made?</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Our products</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                    <li class="header__item"><a href="./" class="header__link">Home</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">About us</a></li>
+                    <li class="header__item"><a href="#howitsmade" class="header__link">How it’s made?</a></li>
+                    <li class="header__item"><a href="#products" class="header__link">Our products</a></li>
+                    <li class="header__item"><a href="#contacts" class="header__link">Contact</a></li>
                 </ul>
             </nav>
             <button type="button" class="button__main"><span class="button__text">Buy now</span><svg width="7px" height="10px">
@@ -34,8 +39,21 @@
     </div>
 </header>
 <!-- HERO============================================================== -->
-<section class="hero">
+<section id="about" class="hero">
     <div class="container hero__container">
+        <picture class="header__pic1">
+            <source srcset="./images/hero/desktop/hero-milk.png 1x, ./images/hero/desktop/hero-milk@2x.png 2x" media="(min-width: 1200px)" type="image/png">
+            <source srcset="./images/hero/tablet/hero-milk.png 1x, ./images/hero/tablet/hero-milk@2x.png 2x"
+                media="(min-width: 768px)" type="image/png">
+            <img src="./images/hero/desktop/hero-milk@2x.png" alt="milk">
+        </picture>
+        <picture class="header__pic2">
+            <source srcset="./images/hero/desktop/hero-girl.png 1x, ./images/hero/desktop/hero-girl@2x.png 2x"
+                media="(min-width: 1200px)" type="image/png">
+            <source srcset="./images/hero/tablet/hero-girl.png 1x, ./images/hero/tablet/hero-girl@2x.png 2x"
+                media="(min-width: 768px)" type="image/png">
+            <img src="./images/hero/desktop/hero-girl@2x.png" alt="girl with icecream">
+        </picture>
         <div class="hero__wraper">
             <div class="hero__main">
                 <h1 class="hero__title">ice cream </br>
@@ -46,14 +64,19 @@
                 <button class="button__hero button__hero--white" type="button">How it’s made?</button>
             </div>
             <ul class="hero__indicators">
-                <li class="hero__item"><span>16</span><span>cafes</span></li>
-                <li class="hero__item"><span>23</span><span>food trucks</span></li>
+                <li class="hero__item"><span class="hero__walue">16</span>cafes</li>
+                <li class="hero__item"><span class="hero__walue">23</span>food trucks</li>
             </ul>
         </div>
         <div class="hero__description">
+            <button type="button" class="button__secondary">
+                <svg width="6px" height="6px">
+                    <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
+                </svg>
+            </button>
             <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et</p>
-            <button type="button"></button>
+            
         </div>
         <picture></picture>
         <picture></picture>
