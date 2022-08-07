@@ -19,6 +19,13 @@
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
+.contacts__box--shops {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        // flex-wrap: nowrap;
+        gap: 32px;
+    }
+}
 
 .button__title {
     // width: 80px;
@@ -33,6 +40,19 @@
     border-radius: 4px;
     text-transform: uppercase;
 }
+
+.button__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-top: 60px;
+        // margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: nowrap;
+        gap: 15px;
+    }
+}
+
 .contacts__title {
     margin-top: 8px;
     margin-bottom: 24px;
