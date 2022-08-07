@@ -16,8 +16,6 @@
       $primeryColor 31%,
       $textWhiteColor 20%
     );
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   @media screen and (min-width: 768px) {
@@ -26,8 +24,6 @@
       $primeryColor 55%,
       $textWhiteColor 20%
     );
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -36,8 +32,6 @@
       $primeryColor 29%,
       $textWhiteColor 20%
     );
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -145,4 +139,14 @@
   grid-column-end: 19;
   grid-row-start: 5;
   grid-row-end: 8;
+}
+.section__gallery {
+  @media screen and (max-width: 1199px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
