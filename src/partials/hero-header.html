@@ -17,6 +17,18 @@
                 <use href="./images/symbol-defs.svg#btn-icon"></use>
             </svg></button>
             </div>
+            <nav class="desktop__nav">
+                <ul class="desktop__list">
+                        <li class="desktop__item"><a href="./" class="desktop__link">Home</a></li>
+                        <li class="desktop__item"><a href="#about" class="desktop__link">About us</a></li>
+                        <li class="desktop__item"><a href="#howitsmade" class="desktop__link">How it’s made?</a></li>
+                        <li class="desktop__item"><a href="#products" class="desktop__link">Our products</a></li>
+                        <li class="desktop__item"><a href="#contacts" class="desktop__link">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="button__main desktop__button"><span class="button__text">Buy now</span><svg width="7px" height="10px">
+                    <use href="./images/symbol-defs.svg#btn-icon"></use>
+                </svg></button> 
         <div class="header__mobil is-hidden" data-modal>
             <nav class="header__nav">
                 <ul class="header__list">
@@ -41,17 +53,17 @@
 <!-- HERO============================================================== -->
 <section id="about" class="hero">
     <div class="container hero__container">
-        <picture class="header__pic1">
+        <picture class="header__pic1 slide-in-elliptic-left-fwd">
             <source srcset="./images/hero/desktop/hero-milk.png 1x, ./images/hero/desktop/hero-milk@2x.png 2x" media="(min-width: 1200px)" type="image/png">
-            <!-- <source srcset=" ./images/hero/tablet/hero-milk.png 1x, ./images/hero/tablet/hero-milk@2x.png 2x"
+            <!-- <source srcset="./images/hero/tablet/hero-milk.png 1x, ./images/hero/tablet/hero-milk@2x.png  2x"
                 media="(min-width: 768px)" type="image/png"> -->
             <img src="./images/hero/desktop/hero-milk@2x.png" alt="milk">
             
         </picture>
-        <picture class="header__pic2">
+        <picture class="header__pic2 slide-in-elliptic-bottom-fwd">
             <source srcset="./images/hero/desktop/hero-girl.png 1x, ./images/hero/desktop/hero-girl@2x.png 2x"
                 media="(min-width: 1200px)" type="image/png">
-            <!-- <source srcset=" ./images/hero/tablet/hero-girl.png 1x, ./images/hero/tablet/hero-girl@2x.png 2x"
+            <!-- <source srcset="./images/hero/tablet/hero-girl.png 1x, ./images/hero/tablet/hero-girl@2x.png  2x"
                 media="(min-width: 768px)" type="image/png"> -->
             <img src="./images/hero/desktop/hero-girl@2x.png" alt="girl with icecream">
          
@@ -81,8 +93,5 @@
                 incididunt ut labore et</p>
             
         </div>
-        <picture></picture>
-        <picture></picture>
-        <picture></picture>
     </div>
 </section>
