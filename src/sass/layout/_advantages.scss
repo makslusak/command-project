@@ -2,11 +2,14 @@
   padding-top: 20px;
   background-color: $primeryColor;
   @media screen and (min-width: 768px) {
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    // padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
-
-// .advantages__container {padding-bottom: 30px;}
 
 .advantages__container {
   @media screen and (min-width: 768px) {
@@ -32,8 +35,8 @@
   }
 }
 
-.iteam {
-}
+// .iteam {
+// }
 
 .advantages__text {
   font-family: 'Titan One';
@@ -49,13 +52,21 @@
   margin-bottom: 14px;
   padding-top: 86px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 13px;
-    font-size: 48px;
+  @media screen and (max-width: 767px) {
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
     font-size: 58px;
-    margin-bottom: 16px;
+    line-height: 1.13;
   }
 }
 
@@ -119,5 +130,8 @@
     font-size: 16px;
     // text-align:start;
     max-width: 317px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
   }
 }
