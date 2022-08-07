@@ -1,0 +1,98 @@
+.contacts__section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    // margin-bottom: 40px;
+}
+.footer {
+    padding-top: 20px;
+}
+
+.contacts {
+    // height: 412px;
+    width: 280px;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.button__title {
+    // width: 80px;
+    // height: 16px;
+    font-family: DM sans, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+    background-color: #F0D1A5;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+.contacts__title {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.contacts__text {
+    // width: 179px;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+}
+.contacts__title {
+    font-family: DM sans, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.contacts__text {
+    font-family: DM sans, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+    margin-bottom: 24px;
+    // border: 1px solid #E1E1E1;
+}
+
+
+
+// .contacts__icon {
+//     color: #E1E1E1;
+//     border: 1px solid #E1E1E1;
+//     height: 0px;
+//     width: 216px;
+//     border: 1px solid #E1E1E1;
+//     // margin-top: 24px;
+//     // margin-bottom: 24px;
+// }
+
+// .contacts__box--icon {
+//     border-top: 24px;
+//     border-bottom: 24px;
+// }
+.contacts__box {
+    font-family: DM sans, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+    border-bottom: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+// .contacts__link {
+// margin-top: 24px;
+// }
+
+.contacts__box--time {
+    color: #FFA5BA;
+}
