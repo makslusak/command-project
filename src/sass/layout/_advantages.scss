@@ -1,130 +1,137 @@
 .section.advantages {
-    padding-top: 20px;
-    background-color: $primeryColor;
-    @media screen and (min-width: 768px) {
-        padding-bottom: 0;
-    }
+  padding-top: 20px;
+  background-color: $primeryColor;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    // padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
-// .advantages__container {padding-bottom: 30px;}
-     
-.advantages__container{
-@media screen and (min-width: 768px) {
-            padding-bottom: 32px;
-        }
-    }
+.advantages__container {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+}
 
 .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
 
-@media screen and (min-width: 768px) {            font-size: 26px;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 0;
-        }
-@media screen and (min-width: 1200px) {
-        justify-content: space-evenly;
-        gap: 0;
-        }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-evenly;
+    gap: 0;
+  }
 }
 
-.iteam {}
-
-
+// .iteam {
+// }
 
 .advantages__text {
-    font-family: 'Titan One';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 1.14;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    position: relative;
-        color: $titleColor;
-        text-align: center;
-        margin-bottom: 14px;
-        padding-top: 86px;
-    
-    @media screen and (min-width: 768px) {
-        margin-bottom: 13px;
-        font-size: 48px;
-        }
-    @media screen and (min-width: 768px) {
-        font-size: 58px;
-                margin-bottom: 16px;
-        }
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  position: relative;
+  color: $titleColor;
+  text-align: center;
+  margin-bottom: 14px;
+  padding-top: 86px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+  }
 }
 
 .advantages__text.milk::before {
-    content: "";
-    position: absolute;
-    background-image: url(./../images/advan1.svg);
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-
-
+  content: '';
+  position: absolute;
+  background-image: url(./../images/advan1.svg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .advantages__text.appl::before {
-    content: "";
-    position: absolute;
-    background-image: url(./../images/advan1.svg);
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-
-
+  content: '';
+  position: absolute;
+  background-image: url(./../images/advan2.svg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .advantages__text.love::before {
-    content: "";
-    position: absolute;
-    background-image: url(./../images/advan1.svg);
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-
-
+  content: '';
+  position: absolute;
+  background-image: url(./../images/advan3.svg);
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-
 .advantages__content {
-    font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.7;
-        color: $secondaryTextColor;
-        text-align: center;
-        max-width: 230px;
-        margin-left: auto;
-        margin-right: auto;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $secondaryTextColor;
+  text-align: center;
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-        }
-    @media screen and (min-width: 1200px) {
-        font-size: 16px;
-        // text-align:start;
-        max-width: 317px;
-        }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    // text-align:start;
+    max-width: 317px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
 }
