@@ -26,7 +26,7 @@
                         <li class="desktop__item"><a href="#contacts" class="desktop__link">Contact</a></li>
                 </ul>
             </nav>
-            <button type="button" class="button__main desktop__button"><span class="button__text">Buy now</span><svg width="7px" height="10px">
+            <button type="button" class="button__main desktop__button" data-buyform-open><span class="button__text">Buy now</span><svg width="7px" height="10px">
                     <use href="./images/symbol-defs.svg#btn-icon"></use>
                 </svg></button> 
         <div class="header__mobil is-hidden" data-modal>
@@ -39,7 +39,7 @@
                     <li class="header__item"><a href="#contacts" class="header__link">Contact</a></li>
                 </ul>
             </nav>
-            <button type="button" class="button__main"><span class="button__text">Buy now</span><svg width="7px" height="10px">
+            <button type="button" class="button__main" data-buyform-open><span class="button__text">Buy now</span><svg width="7px" height="10px">
                 <use href="./images/symbol-defs.svg#btn-icon"></use>
             </svg></button>
             <button class="cross" type="button" data-modal-close>
@@ -95,3 +95,59 @@
         </div>
     </div>
 </section>
+<!-- buyform============================================ -->
+<div class="buyform__beckdrop is-hidden" data-buyform>
+    <div class="buyform__modal">
+        <button type="button" class="buyform__close" data-buyform-close>
+            <svg width="14px" height="14px" class="buyform__icon">
+                <use href="./images/symbol-defs.svg#btn-close"></use>
+            </svg>
+        </button>
+        <div class="buyform__container">
+            <strong class="buyform__title">Make an order</strong>
+            <label for="name">Name</label>
+            <input type="name" id="name" name="name" autocomplete="name" placeholder="Elizabeth">
+            <label for="phone">Phone number</label>
+            <input type="phone" id="phone" name="phone" autocomplete="tel" placeholder="+447111441177">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="queenelizabeth@gmail.com">
+            <label for="address">Delivery address</label>
+            <input type="address" id="address" name="address" placeholder=" London SW1A 1AA">
+<label for="product">Product</label>
+<select name="product" id="product">
+    <optgroup label="Ice cream">
+        <option value="a1">chocolate</option>
+        <option value="a2">vanila</option>
+        <option value="a3">coconut</option>
+        <option value="a4">lemon</option>
+        <option value="a5">cherry</option>
+        <option value="a6">strawberry</option>
+        <option value="a7">banana</option>
+        <option value="a8">tropic</option>
+        <option value="a9">berries</option>
+    </optgroup>
+    <optgroup label="Ice coffee">
+        <option value="b1">classic</option>
+        <option value="b2">chocolate</option>
+        <option value="b3">vanila</option>
+        <option value="b4">coconut</option>
+    </optgroup>
+        <optgroup label="Milkshake">
+            <option value="c1">chocolate</option>
+            <option value="c2">vanila</option>
+            <option value="c3">coconut</option>
+            <option value="c4">lemon</option>
+            <option value="c5">cherry</option>
+            <option value="c6">strawberry</option>
+            <option value="c7">banana</option>
+            <option value="c8">tropic</option>
+            <option value="c9">berries</option>
+        </optgroup>
+</select>
+            <label for="quantity">Quantity</label>
+                <input id="quantity" type="number" name="height" min="1" max="100" step="1" value="1" />
+            
+            <button type="submit" class="button__main button__hero--red buyform__btn">Order</button>
+        </div>
+    </div>
+</div>
