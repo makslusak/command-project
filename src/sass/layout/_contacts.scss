@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     // margin-bottom: 40px;
     // background-color: #FFF5F6;
-    background-image: linear-gradient(#E5E5E5, #FFF5F6);
+        background-image: linear-gradient(#E5E5E5, #FFF5F6);
 }
 .footer {
     padding-top: 20px;
@@ -22,6 +22,9 @@
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        
+    }
 }
 .contacts__box--shops {
     background-color: #FFFFFF;
@@ -61,10 +64,6 @@
     }
 }
 
-.contacts__title {
-    margin-top: 8px;
-    margin-bottom: 24px;
-}
 .contacts__text {
     // width: 179px;
     font-size: 12px;
@@ -78,6 +77,17 @@
     line-height: 1.86;
     letter-spacing: 0.04em;
     color: #000000;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
 }
 .contacts__text {
     font-family: DM sans, sans-serif;
@@ -87,6 +97,16 @@
     color: #907E82;
     margin-bottom: 24px;
     // border: 1px solid #E1E1E1;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: 1.66;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        line-height: 1.83;
+        
+    }
+
 }
 
 
@@ -116,6 +136,15 @@
     border-top: 1px solid #E1E1E1;
     padding: 24px;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        min-width: 224px;
+    }
+    @media screen and (min-width:1200px){
+        font-size: 16px;
+        
+    }
 }
 // .contacts__link {
 // margin-top: 24px;
@@ -141,6 +170,7 @@
     height: 44px;
 
     &--red {
+        min-width: 161px;
         background-color: $titleColor;
         color: $textWhiteColor;
 
@@ -151,6 +181,7 @@
     }
 
     &--white {
+        min-width: 161px;
         background-color: $textWhiteColor;
         color: $titleColor;
 
