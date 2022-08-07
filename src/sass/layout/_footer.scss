@@ -1,0 +1,114 @@
+.footer__title {
+    padding-left: 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #FFA5BA;
+    font-weight: 400;
+    font-family: Titan One, sans-serif;
+    line-height: 1.17;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 30px;
+        line-height: 1.13;        
+    }
+}
+
+.footer__title--red {
+    font-weight: 400;
+    font-family: Titan One, sans-serif;
+    color: #D41443;
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-left: 16px;
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 58px;
+        line-height: 1.14;
+        letter-spacing: 0.06em;
+        display: flex;
+    }
+
+}
+.footer__list {
+    display: flex;
+    gap: 28px;
+    justify-content: end;
+    margin-bottom: 40px;
+    padding-right: 20px;
+
+    @media screen and (min-width: 768px) {
+        gap: 30px;
+        
+    }
+}
+.footer__text {
+    margin-bottom: 40px;
+    text-align: end;
+    font-family: DM sans, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.86;
+    color: #000000;
+    padding-right: 20px;
+    @media screen and (min-width: 768px) {
+        font-size: 14px;        
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer__phone {
+    color: #D41443;
+}
+
+.footer__text--rights {
+    margin-top: 16px;
+    text-align: center;
+    font-family: DM sans, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    color: #907E82;
+}
+.footer__text--color {
+    color: #D41443;
+}
+.footer__icon {
+    
+    fill: #FFFFFF;
+}
+.footer__link {
+    border-radius: 50%;
+    background-color: #FEA5BB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__box--right {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.footer__box--desk {
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+}

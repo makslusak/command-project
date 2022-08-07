@@ -201,8 +201,7 @@
     margin-bottom: 108px;
   }
 }
-.hero__main {
-}
+
 .hero__title {
   display: block;
   text-transform: uppercase;
@@ -265,11 +264,12 @@
       background-color: #ecebeb;
     }
   }
+
   @media screen and(min-width:1200px) {
     font-size: 14px;
     line-height: 1.28;
     padding: 12px 20px;
-  }
+}
 }
 
 .hero__indicators {
