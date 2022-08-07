@@ -2,9 +2,12 @@
     padding-top: 30px;
     padding-bottom: 20px;
     // margin-bottom: 40px;
+    // background-color: #FFF5F6;
+    background-image: linear-gradient(#E5E5E5, #FFF5F6);
 }
 .footer {
     padding-top: 20px;
+    background-color: #FFF5F6;
 }
 
 .contacts {
@@ -18,8 +21,12 @@
     padding-bottom: 40px;
     background: #FFFFFF;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    margin-bottom: 20px;
 }
 .contacts__box--shops {
+    background-color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
     @media screen and (min-width: 768px) {
         display: flex;
         // flex-wrap: nowrap;
@@ -42,6 +49,7 @@
 }
 
 .button__list {
+    margin-top: 12px;
     @media screen and (min-width: 768px) {
         display: flex;
         margin-top: 60px;
@@ -115,4 +123,40 @@
 
 .contacts__box--time {
     color: #FFA5BA;
+}
+
+.button__contacts {
+    font-family: DM sans, sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 78px;
+    padding: 7px 14px;
+    font-size: 16px;
+    line-height: 1.31;
+    border: none;
+    border-radius: 22px;
+    height: 44px;
+
+    &--red {
+        background-color: $titleColor;
+        color: $textWhiteColor;
+
+        &:hover,
+        &:focus {
+            background-color: #d41342;
+        }
+    }
+
+    &--white {
+        background-color: $textWhiteColor;
+        color: $titleColor;
+
+        &:hover,
+        &:focus {
+            background-color: #ecebeb;
+        }
+    }
 }

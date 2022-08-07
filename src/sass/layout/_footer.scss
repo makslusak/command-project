@@ -1,13 +1,62 @@
 .footer__title {
     margin-bottom: 12px;
-    font-size: 26px;
+    font-size: 18px;
     color: #FFA5BA;
     font-weight: 400;
     font-family: Titan One, sans-serif;
-    line-height: 1.25;
+    line-height: 1.17;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
 }
 .footer__title--red {
     color: #D41443;
-    font-size: 48px;
+    font-size: 34px;
     line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    @media screen {
+        font-size: 48px;
+        line-height: 1.15;
+        letter-spacing: 0.06em;
+        
+    }
+}
+.footer__list {
+    display: flex;
+    gap: 28px;
+    justify-content: end;
+    margin-bottom: 40px;
+}
+.footer__text {
+    margin-bottom: 40px;
+    text-align: end;
+    font-family: DM sans, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.86;
+    color: #000000;
+}
+
+.footer__phone {
+    color: #D41443;
+}
+
+.footer__text--rights {
+    margin-top: 16px;
+    text-align: center;
+    font-family: DM sans, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    color: #907E82;
+}
+.footer__text--color {
+    color: #D41443;
+}
+.footer__icon {
+    fill: #FEA5BB;
 }
