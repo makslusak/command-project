@@ -123,7 +123,16 @@
   position: absolute;
 
   display: inline-block;
-  background-image: url('/src/images/aboutbg.png');
+
+  @media screen and (max-width: 767px) {
+    background-image: url('/src/images/aboutbg.png');
+    @media (min-deviace-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/sectionbg-mobile@2.png');
+    }
+  }
+
   background-repeat: no-repeat;
   background-size: 100%;
   height: 100%;
@@ -146,12 +155,17 @@
     width: 100vw;
     height: 100%;
     top: 25%;
+    @media (min-deviace-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/sectionbg-desktop@2.png');
+    }
   }
 }
 .about__text-container {
-  width: 220px;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 100%;
+  width: 100%;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    width: 220px;
   }
   @media screen and (min-width: 768px) {
     width: 334px;
@@ -168,6 +182,9 @@
 }
 .about__button {
   font-weight: 700;
+  position: relative;
+  z-index: 99999;
+
   @media screen and (max-width: 768px) {
     font-size: 14px;
     line-height: 1.28;
@@ -230,39 +247,44 @@
 // МОДАЛЬНЕ ВІКНО
 .about-us {
   position: fixed;
+  display: none;
+
+  overflow: auto;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.6);
-  z-index: 999999999;
-  padding-left: 15px;
-  padding-right: 15px;
+  z-index: 99999;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .about-us__container {
   position: absolute;
-
+  pointer-events: none;
   height: 500px;
   width: 800px;
+  z-index: 999999;
   background-image: linear-gradient(
     to right bottom,
     $preTitleColor,
     $whiteColor
   );
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   padding: 40px;
-  transform: perspective(600px), translate(0, -100%), rotate(45deg);
+  // transform: perspective(600px), translate(0, -100%), rotate(45deg);
   transition: opacity 5000ms linear;
   box-shadow: 0 0 10px 5px rgba(240, 92, 136, 0.3);
   @media screen and (max-width: 767px) {
-    height: 380px;
-    width: 100%;
+    height: 50%;
+    width: 80%;
   }
   @media screen and (max-width: 479px) {
-    height: 100%;
+    height: 95%;
     width: 100%;
   }
 }
@@ -276,7 +298,7 @@
 
   color: $titleColor;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     font-size: 26px;
     line-height: 1.5;
@@ -301,24 +323,25 @@
   }
 }
 .about-us__text-pre {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     @media screen and (max-width: 479px) {
-      margin-bottom: 40px;
+      margin-bottom: 8px;
     }
   }
 }
 .about-us__icon {
   width: 18px;
   height: 18px;
+  transition: all 250ms linear;
 }
 .about-us__button {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  z-index: 999999;
   width: 28px;
   height: 28px;
   background-color: $titleColor;
@@ -331,12 +354,13 @@
 }
 .about-us__button:hover,
 .about-us__button:focus {
-  background-color: #ecebeb;
+  background-color: gray;
 }
-.about-us__button:hover .about-us__icon,
-.about-us__button:focus .about-us__icon {
-  fill: black;
-}
+// .about-us__button:hover .about-us__icon,
+// .about-us__button:focus .about-us__icon {
+//   fill: black;
+//   transform: perspective(600px), rotateZ(180deg);
+// }
 .about-us.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -351,4 +375,13 @@
     width: 100px;
     height: 100px;
   }
+}
+.about-use__pre-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.76;
+
+  letter-spacing: 0.04em;
+
+  color: deeppink;
 }
