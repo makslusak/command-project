@@ -1,12 +1,9 @@
 .contacts__section {
   padding-top: 60px;
   padding-bottom: 60px;
-  // margin-bottom: 40px;
-  // background-color: #FFF5F6;
   @media screen and (min-width: 1200px) {
     background: linear-gradient(to bottom, #ffffff 20%, #fff5f6 20%);
   }
-
   @media screen and (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 20px;
@@ -19,6 +16,7 @@
     background: linear-gradient(to bottom, #ffffff 50%, #fff5f6 50%);
   }
 }
+
 .contacts__container {
   width: 100%;
   @media screen and (min-width: 480px) {
@@ -38,13 +36,10 @@
 }
 
 .contacts {
-  // height: 412px;
-  //   width: 280px;
   @media screen and (min-width: 1200px) {
     width: 368px;
     padding: 40px;
   }
-
   border: 2px solid transparent;
   border-radius: 24px;
   padding-top: 40px;
@@ -61,13 +56,13 @@
     width: 280px;
   }
 }
+
 .contacts__box--shops {
   text-align: center;
   justify-content: start;
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
     display: flex;
-    // flex-wrap: nowrap;
     gap: 32px;
     margin-bottom: 60px;
   }
@@ -82,7 +77,6 @@
 .button__list {
   @media screen and (min-width: 768px) {
     display: flex;
-
     justify-content: center;
     text-align: center;
     flex-wrap: nowrap;
@@ -98,11 +92,11 @@
 }
 
 .contacts__text {
-  // width: 179px;
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
 }
+
 .contacts__title {
   font-family: DM sans, sans-serif;
   font-weight: 500;
@@ -110,7 +104,6 @@
   line-height: 1.86;
   letter-spacing: 0.04em;
   color: #000000;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 14px;
     margin-bottom: 12px;
@@ -123,6 +116,7 @@
     margin-bottom: 32px;
   }
 }
+
 .contacts__text {
   font-family: DM sans, sans-serif;
   font-weight: 500;
@@ -130,7 +124,6 @@
   line-height: 1.5;
   color: #907e82;
   margin-bottom: 24px;
-  // border: 1px solid #E1E1E1;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.66;
@@ -141,20 +134,6 @@
   }
 }
 
-// .contacts__icon {
-//     color: #E1E1E1;
-//     border: 1px solid #E1E1E1;
-//     height: 0px;
-//     width: 216px;
-//     border: 1px solid #E1E1E1;
-//     // margin-top: 24px;
-//     // margin-bottom: 24px;
-// }
-
-// .contacts__box--icon {
-//     border-top: 24px;
-//     border-bottom: 24px;
-// }
 .contacts__box {
   font-family: DM sans, sans-serif;
   font-weight: 500;
@@ -168,7 +147,6 @@
   padding-bottom: 32px;
   margin-bottom: 24px;
   text-align: start;
-
   @media screen and (min-width: 768px) {
     font-size: 14px;
     width: 160px;
@@ -182,9 +160,6 @@
     padding-bottom: 24px;
   }
 }
-// .contacts__link {
-// margin-top: 24px;
-// }
 
 .contacts__box--time {
   color: #ffa5ba;
@@ -214,36 +189,32 @@
   border-radius: 22px;
   height: 44px;
   cursor: pointer;
-
   &--red {
     min-width: 161px;
     background-color: $titleColor;
     color: $textWhiteColor;
-
     &:hover,
     &:focus {
       background-color: #d41342;
     }
   }
-
   &--white {
     min-width: 161px;
     background-color: $textWhiteColor;
     color: $titleColor;
-
     &:hover,
     &:focus {
       background-color: #ecebeb;
     }
   }
 }
+
 .contacts__link {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
-
   color: #907e82;
   text-align: start;
   &:hover,
@@ -260,6 +231,7 @@
     line-height: 1.5;
   }
 }
+
 .contacts__button {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
@@ -270,10 +242,8 @@
   border-radius: 6px;
   text-transform: uppercase;
   cursor: pointer;
-
   text-align: center;
   letter-spacing: 0.04em;
-
   color: #ffffff;
   @media screen and (max-width: 1199px) {
     padding: 2px 15px;
@@ -289,27 +259,28 @@
     padding: 1px 20px;
   }
 }
+
 .button__title-cafe {
   background-color: #f0d1a5;
-
   text-transform: uppercase;
   border: none;
 }
+
 .button__title-food {
   background: #c2e297;
-
   text-transform: uppercase;
   border: none;
 }
+
 .contacts__container {
   padding-left: 20px;
   padding-right: 20px;
-
   @media screen and (min-width: 768px) {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
+
 .contacts__box--day {
   font-weight: 500;
   font-size: 12px;
@@ -324,6 +295,7 @@
     letter-spacing: 0.04em;
   }
 }
+
 .button__item {
   @media screen and (max-width: 767px) {
     margin: 0 auto;
@@ -331,6 +303,7 @@
     text-align: center;
   }
 }
+
 .contacts__box--time-indent {
   @media screen and (max-width: 767px) {
     margin-bottom: 8px;
