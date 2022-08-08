@@ -158,6 +158,7 @@
 }
 .footer__icon {
   fill: #ffffff;
+  transition: all 250ms ease-in;
 }
 .footer__link {
   border-radius: 50%;
@@ -237,4 +238,8 @@
 .button__contacts--white:focus {
   background-color: #d41342;
   color: #ffffff;
+}
+.button__contacts--red,
+.button__contacts--white {
+  transition: all 250ms ease-in;
 }
