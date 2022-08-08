@@ -41,7 +41,7 @@
 }
 .button--clone {
   display: none;
-  @media screen and(min-width:768px) and(max-width:1200px) {
+  @media screen and(min-width:768px) and(max-width:1199px) {
     display: inline-flex;
   }
 }
@@ -90,7 +90,6 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: column-reverse;
-  // display: none;
   & .button__main {
     align-self: center;
     width: 209px;
@@ -201,25 +200,28 @@
   }
 }
 
+.buyform__form {
+  width: 100%;
+}
 .buyform__container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  input,
-  select {
-    background-color: $primeryColor;
-    border: 1px solid $secondaryColor;
-    border-radius: 2px;
-    height: 30px;
-    padding: 4px 8px;
-    margin-top: 4px;
-    margin-bottom: 8px;
-    max-height: 100vh;
-    overflow: auto;
-    color: $mainTextColor;
-    &:focus {
-      outline: 2px solid $titleColor;
-    }
+}
+
+.buyform__input {
+  background-color: $primeryColor;
+  border: 1px solid $secondaryColor;
+  border-radius: 2px;
+  height: 30px;
+  padding: 4px 8px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  max-height: 100vh;
+  overflow: auto;
+  color: $mainTextColor;
+  &:focus {
+    outline: 2px solid $titleColor;
   }
 }
 
