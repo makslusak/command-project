@@ -254,6 +254,7 @@
   width: 7px;
   height: 10px;
 }
+
 // МОДАЛЬНЕ ВІКНО
 .about-us {
   position: fixed;
@@ -290,11 +291,11 @@
   transition: opacity 5000ms linear;
   box-shadow: 0 0 10px 5px rgba(240, 92, 136, 0.3);
   @media screen and (max-width: 767px) {
-    height: 50%;
+    min-height: 50%;
     width: 80%;
   }
   @media screen and (max-width: 479px) {
-    height: 95%;
+    min-height: 95%;
     width: 100%;
   }
 }
@@ -391,4 +392,17 @@
   letter-spacing: 0.04em;
 
   color: deeppink;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d41443;
+  border-radius: 20px;
+  border: 3px solid #ffb8ca;
 }
