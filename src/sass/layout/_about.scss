@@ -271,7 +271,7 @@
 }
 .about-us__container {
   position: absolute;
-  pointer-events: none;
+
   height: 500px;
   width: 800px;
   z-index: 999999;
@@ -361,7 +361,6 @@
 
   top: 20px;
   right: 20px;
-  fill: pink;
 }
 .about-us__button:hover,
 .about-us__button:focus {
@@ -371,7 +370,7 @@
 .about-us__button:hover .about-us__icon,
 .about-us__button:focus .about-us__icon {
   fill: black;
-  transform: rotateZ(180deg);
+  transform: rotateX(180deg);
 }
 .about-us.is-hidden {
   opacity: 0;
