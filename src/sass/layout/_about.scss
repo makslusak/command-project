@@ -75,7 +75,7 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 1.62;
   color: $secondaryTextColor;
   text-align: start;
 
@@ -83,13 +83,13 @@
   z-index: 99999;
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1.76;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
 
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.76;
 
     letter-spacing: 0.04em;
   }
@@ -98,7 +98,7 @@
   position: relative;
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 1.62;
   color: $mainTextColor;
   text-align: start;
 
@@ -108,7 +108,7 @@
   @media screen and(min-width:768px) {
     font-weight: 500;
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1.76;
 
     letter-spacing: 0.04em;
   }
@@ -184,6 +184,7 @@
   font-weight: 700;
   position: relative;
   z-index: 99999;
+  cursor: pointer;
 
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -334,7 +335,6 @@
 .about-us__icon {
   width: 18px;
   height: 18px;
-  transition: all 250ms linear;
 }
 .about-us__button {
   position: absolute;
@@ -347,6 +347,8 @@
   background-color: $titleColor;
   border: none;
   border-radius: 20px;
+  cursor: pointer;
+  transition: rotate 250ms ease-in;
 
   top: 20px;
   right: 20px;
@@ -355,12 +357,13 @@
 .about-us__button:hover,
 .about-us__button:focus {
   background-color: gray;
+  // transform: rotate(180deg);
 }
-// .about-us__button:hover .about-us__icon,
-// .about-us__button:focus .about-us__icon {
-//   fill: black;
-//   transform: perspective(600px), rotateZ(180deg);
-// }
+.about-us__button:hover .about-us__icon,
+.about-us__button:focus .about-us__icon {
+  fill: black;
+  transform: rotateZ(180deg);
+}
 .about-us.is-hidden {
   opacity: 0;
   pointer-events: none;
