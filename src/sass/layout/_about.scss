@@ -357,20 +357,16 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: rotate 250ms ease-in;
+  transition: transform 250ms ease-in;
 
   top: 20px;
   right: 20px;
 }
+
 .about-us__button:hover,
 .about-us__button:focus {
   background-color: gray;
-  // transform: rotate(180deg);
-}
-.about-us__button:hover .about-us__icon,
-.about-us__button:focus .about-us__icon {
-  fill: black;
-  transform: rotateX(180deg);
+  transform: rotate(90deg);
 }
 .about-us.is-hidden {
   opacity: 0;
