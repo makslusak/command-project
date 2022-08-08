@@ -49,6 +49,12 @@
     font-size: 30px;
     line-height: 1.13;
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 232px;
+  }
 }
 
 .footer__title--red {
@@ -124,6 +130,12 @@
     line-height: 1.14;
     letter-spacing: 0.04em;
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 232px;
+  }
 }
 
 .footer__phone {
@@ -188,6 +200,7 @@
 }
 .footer__list-position {
   align-items: baseline;
+  align-self: flex-end;
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
