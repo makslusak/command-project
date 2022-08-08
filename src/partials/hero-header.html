@@ -1,155 +1,264 @@
 <header class="header">
-    <div class="container header__container">
-        <div class="header__logo logo">
-            <a href="./" class="logo">
-                <svg class="logo__icon" width="199px" height="50px">
-                    <use href="./images/symbol-defs.svg#logo"></use>
-                </svg>
-            </a>
-        </div>
-        <div class="button__container">
-        <button class="burger" type="button" data-modal-open>
-            <svg class="burger__icon" width="20px" height="12px">
-                <use href="./images/symbol-defs.svg#btn-menu"></use>
-            </svg>
-        </button>
-        <button type="button" class="button__main button--clone"><span class="button__text">Buy now</span><svg width="7px" height="10px">
-                <use href="./images/symbol-defs.svg#btn-icon"></use>
-            </svg></button>
-            </div>
-            <nav class="desktop__nav">
-                <ul class="desktop__list">
-                        <li class="desktop__item"><a href="./" class="desktop__link">Home</a></li>
-                        <li class="desktop__item"><a href="#about" class="desktop__link">About us</a></li>
-                        <li class="desktop__item"><a href="#howitsmade" class="desktop__link">How it’s made?</a></li>
-                        <li class="desktop__item"><a href="#products" class="desktop__link">Our products</a></li>
-                        <li class="desktop__item"><a href="#contacts" class="desktop__link">Contact</a></li>
-                </ul>
-            </nav>
-            <button type="button" class="button__main desktop__button" data-buyform-open><span class="button__text">Buy now</span><svg width="7px" height="10px">
-                    <use href="./images/symbol-defs.svg#btn-icon"></use>
-                </svg></button> 
-        <div class="header__mobil is-hidden" data-modal>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a href="./" class="header__link">Home</a></li>
-                    <li class="header__item"><a href="#about" class="header__link">About us</a></li>
-                    <li class="header__item"><a href="#howitsmade" class="header__link">How it’s made?</a></li>
-                    <li class="header__item"><a href="#products" class="header__link">Our products</a></li>
-                    <li class="header__item"><a href="#contacts" class="header__link">Contact</a></li>
-                </ul>
-            </nav>
-            <button type="button" class="button__main" data-buyform-open><span class="button__text">Buy now</span><svg width="7px" height="10px">
-                <use href="./images/symbol-defs.svg#btn-icon"></use>
-            </svg></button>
-            <button class="cross" type="button" data-modal-close>
-                <svg class="cross__icon" width="14px" height="14px">
-                    <use href="./images/symbol-defs.svg#btn-close"></use>
-                </svg>
-            </button>
-        </div>
+  <div class="container header__container">
+    <div class="header__logo logo">
+      <a href="./" class="logo">
+        <svg class="logo__icon" width="199px" height="50px">
+          <use href="./images/symbol-defs.svg#logo"></use>
+        </svg>
+      </a>
     </div>
+    <div class="button__container">
+      <button class="burger" type="button" data-modal-open>
+        <svg class="burger__icon" width="20px" height="12px">
+          <use href="./images/symbol-defs.svg#btn-menu"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="button__main button--clone"
+        data-buyform-open
+      >
+        <span class="button__text">Buy now</span
+        ><svg width="7px" height="10px">
+          <use href="./images/symbol-defs.svg#btn-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="desktop__nav">
+      <ul class="desktop__list">
+        <li class="desktop__item">
+          <a href="./" class="desktop__link">Home</a>
+        </li>
+        <li class="desktop__item">
+          <a href="#about" class="desktop__link">About us</a>
+        </li>
+        <li class="desktop__item">
+          <a href="#howitsmade" class="desktop__link">How it’s made?</a>
+        </li>
+        <li class="desktop__item">
+          <a href="#products" class="desktop__link">Our products</a>
+        </li>
+        <li class="desktop__item">
+          <a href="#contacts" class="desktop__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      type="button"
+      class="button__main desktop__button"
+      data-buyformclone-open
+    >
+      <span class="button__text">Buy now</span
+      ><svg width="7px" height="10px">
+        <use href="./images/symbol-defs.svg#btn-icon"></use>
+      </svg>
+    </button>
+    <div class="header__mobil is-hidden" data-modal>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="./" class="header__link">Home</a>
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__link">About us</a>
+          </li>
+          <li class="header__item">
+            <a href="#howitsmade" class="header__link">How it’s made?</a>
+          </li>
+          <li class="header__item">
+            <a href="#products" class="header__link">Our products</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="button__main" data-buyformsecond-open>
+        <span class="button__text">Buy now</span
+        ><svg width="7px" height="10px">
+          <use href="./images/symbol-defs.svg#btn-icon"></use>
+        </svg>
+      </button>
+      <button class="cross" type="button" data-modal-close>
+        <svg class="cross__icon" width="14px" height="14px">
+          <use href="./images/symbol-defs.svg#btn-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </header>
 <!-- HERO============================================================== -->
 <section class="hero">
-    <div class="container hero__container">
-        <picture class="hero__pic1 slide-in-elliptic-left-fwd">
-            <source srcset="./images/hero/desktop/hero-milk.png 1x, ./images/hero/desktop/hero-milk@2x.png 2x" media="(min-width: 1200px)" type="image/png">
+  <div class="container hero__container">
+    <picture class="hero__pic1 slide-in-elliptic-left-fwd">
+      <source
+        srcset="
+          ./images/hero/desktop/hero-milk.png    1x,
+          ./images/hero/desktop/hero-milk@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
 
-            <source srcset="./images/hero/tablet/hero-milk1.png 1x, ./images/hero/tablet/hero-milk1@2x.png  2x"
+      <source
+        srcset="
+          ./images/hero/tablet/hero-milk1.png    1x,
+          ./images/hero/tablet/hero-milk1@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img src="./images/hero/desktop/hero-milk@2x.png" alt="milk" />
+    </picture>
+    <picture class="hero__pic2 slide-in-elliptic-bottom-fwd">
+      <source
+        srcset="
+          ./images/hero/desktop/hero-girl.png    1x,
+          ./images/hero/desktop/hero-girl@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
 
-                media="(min-width: 768px)" type="image/png">
-            <img src="./images/hero/desktop/hero-milk@2x.png" alt="milk">
-            
-        </picture>
-        <picture class="hero__pic2 slide-in-elliptic-bottom-fwd">
-            <source srcset="./images/hero/desktop/hero-girl.png 1x, ./images/hero/desktop/hero-girl@2x.png 2x"
-                media="(min-width: 1200px)" type="image/png">
-
-            <source srcset="./images/hero/tablet/hero-girl1.png 1x, ./images/hero/tablet/hero-girl1@2x.png 2x"
-
-                media="(min-width: 768px)" type="image/png">
-            <img src="./images/hero/desktop/hero-girl@2x.png" alt="girl with icecream">
-        </picture>
-        <div class="hero__wraper">
-            <div class="hero__main">
-                <h1 class="hero__title jello-horizontal">ice cream made with
-                    <span class="hero__title--strong">passion</span>
-                </h1>
-                        <a class="button__hero button__hero--red" href="#products">Products</a>
-                        <a class="button__hero button__hero--white" href="#howitsmade">How it’s made?</a>     
-            </div>
-            <ul class="hero__indicators">
-                <li class="hero__item"><span class="hero__walue">16</span>cafes</li>
-                <li class="hero__item"><span class="hero__walue">23</span>food trucks</li>
-            </ul>
-        </div>
-        <div class="hero__description">
-            <button type="button" class="button__secondary">
-                <svg width="6px" height="6px">
-                    <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
-                </svg>
-            </button>
-            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et</p>
-            
-        </div>
+      <source
+        srcset="
+          ./images/hero/tablet/hero-girl1.png    1x,
+          ./images/hero/tablet/hero-girl1@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        src="./images/hero/desktop/hero-girl@2x.png"
+        alt="girl with icecream"
+      />
+    </picture>
+    <div class="hero__wraper">
+      <div class="hero__main">
+        <h1 class="hero__title jello-horizontal">
+          ice cream made with
+          <span class="hero__title--strong">passion</span>
+        </h1>
+        <a class="button__hero button__hero--red" href="#products">Products</a>
+        <a class="button__hero button__hero--white" href="#howitsmade"
+          >How it’s made?</a
+        >
+      </div>
+      <ul class="hero__indicators">
+        <li class="hero__item"><span class="hero__walue">16</span>cafes</li>
+        <li class="hero__item">
+          <span class="hero__walue">23</span>food trucks
+        </li>
+      </ul>
     </div>
+    <div class="hero__description">
+      <button type="button" class="button__secondary">
+        <svg width="6px" height="6px">
+          <use href="./images/symbol-defs.svg#icon-arrow-right2"></use>
+        </svg>
+      </button>
+      <p class="hero__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+    </div>
+  </div>
 </section>
 <!-- buyform============================================ -->
 <div class="buyform__beckdrop is-hidden" data-buyform>
-    <div class="buyform__modal">
-        <form class="buyform__form">
-        <button type="button" class="buyform__close" data-buyform-close>
-            <svg width="14px" height="14px" class="buyform__icon">
-                <use href="./images/symbol-defs.svg#btn-close"></use>
-            </svg>
-        </button>
-        <div class="buyform__container">
-            <strong class="buyform__title">Make an order</strong>
-            <label for="name">Name</label>
-            <input class="buyform__input" type="text" id="name" name="name" autocomplete="on" placeholder="Elizabeth">
-            <label for="phone">Phone number</label>
-            <input class="buyform__input" type="text" id="phone" name="phone" autocomplete="on" placeholder="+447111441177">
-            <label for="email">Email</label>
-            <input class="buyform__input" type="text" id="email" name="email" autocomplete="on" placeholder="queenelizabeth@gmail.com">
-            <label for="address">Delivery address</label>
-            <input class="buyform__input" type="text" id="address" name="address" placeholder=" London SW1A 1AA">
-<label for="product">Product</label>
-<select class="buyform__input" name="product" id="product">
-    <optgroup label="Ice cream">
-        <option value="a1">chocolate</option>
-        <option value="a2">vanila</option>
-        <option value="a3">coconut</option>
-        <option value="a4">lemon</option>
-        <option value="a5">cherry</option>
-        <option value="a6">strawberry</option>
-        <option value="a7">banana</option>
-        <option value="a8">tropic</option>
-        <option value="a9">berries</option>
-    </optgroup>
-    <optgroup label="Ice coffee">
-        <option value="b1">classic</option>
-        <option value="b2">chocolate</option>
-        <option value="b3">vanila</option>
-        <option value="b4">coconut</option>
-    </optgroup>
-        <optgroup label="Milkshake">
-        <option value="c1">chocolate</option>
-        <option value="c2">vanila</option>
-        <option value="c3">coconut</option>
-        <option value="c4">lemon</option>
-        <option value="c5">cherry</option>
-        <option value="c6">strawberry</option>
-        <option value="c7">banana</option>
-        <option value="c8">tropic</option>
-        <option value="c9">berries</option>
-        </optgroup>
-</select>
+  <div class="buyform__modal">
+    <form class="buyform__form">
+      <button type="button" class="buyform__close" data-buyform-close>
+        <svg width="14px" height="14px" class="buyform__icon">
+          <use href="./images/symbol-defs.svg#btn-close"></use>
+        </svg>
+      </button>
+      <div class="buyform__container">
+        <strong class="buyform__title">Make an order</strong>
+        <label for="name">Name</label>
+        <input
+          class="buyform__input"
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="on"
+          placeholder="Elizabeth"
+        />
+        <label for="phone">Phone number</label>
+        <input
+          class="buyform__input"
+          type="text"
+          id="phone"
+          name="phone"
+          autocomplete="on"
+          placeholder="+447111441177"
+        />
+        <label for="email">Email</label>
+        <input
+          class="buyform__input"
+          type="text"
+          id="email"
+          name="email"
+          autocomplete="on"
+          placeholder="queenelizabeth@gmail.com"
+        />
+        <label for="address">Delivery address</label>
+        <input
+          class="buyform__input"
+          type="text"
+          id="address"
+          name="address"
+          placeholder=" London SW1A 1AA"
+        />
+        <label for="product">Product</label>
+        <select class="buyform__input" name="product" id="product">
+          <optgroup label="Ice cream">
+            <option value="a1">chocolate</option>
+            <option value="a2">vanila</option>
+            <option value="a3">coconut</option>
+            <option value="a4">lemon</option>
+            <option value="a5">cherry</option>
+            <option value="a6">strawberry</option>
+            <option value="a7">banana</option>
+            <option value="a8">tropic</option>
+            <option value="a9">berries</option>
+          </optgroup>
+          <optgroup label="Ice coffee">
+            <option value="b1">classic</option>
+            <option value="b2">chocolate</option>
+            <option value="b3">vanila</option>
+            <option value="b4">coconut</option>
+          </optgroup>
+          <optgroup label="Milkshake">
+            <option value="c1">chocolate</option>
+            <option value="c2">vanila</option>
+            <option value="c3">coconut</option>
+            <option value="c4">lemon</option>
+            <option value="c5">cherry</option>
+            <option value="c6">strawberry</option>
+            <option value="c7">banana</option>
+            <option value="c8">tropic</option>
+            <option value="c9">berries</option>
+          </optgroup>
+        </select>
         <label for="quantity">Quantity</label>
-            <input class="buyform__input" id="quantity" type="number" name="height" min="1" max="100" step="1" value="1" />
-        <button type="submit" class="button__main button__hero--red buyform__btn">Order</button>
-        </div>
-        </form>
-    </div>
+        <input
+          class="buyform__input"
+          id="quantity"
+          type="number"
+          name="height"
+          min="1"
+          max="100"
+          step="1"
+          value="1"
+        />
+        <button
+          type="submit"
+          class="button__main button__hero--red buyform__btn"
+        >
+          Order
+        </button>
+      </div>
+    </form>
+  </div>
 </div>
