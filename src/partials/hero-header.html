@@ -51,7 +51,7 @@
     </div>
 </header>
 <!-- HERO============================================================== -->
-<section id="about" class="hero">
+<section class="hero">
     <div class="container hero__container">
         <picture class="hero__pic1 slide-in-elliptic-left-fwd">
             <source srcset="./images/hero/desktop/hero-milk.png 1x, ./images/hero/desktop/hero-milk@2x.png 2x" media="(min-width: 1200px)" type="image/png">
@@ -73,13 +73,11 @@
         </picture>
         <div class="hero__wraper">
             <div class="hero__main">
-                <h1 class="hero__title">ice cream </br>
-                    made with
+                <h1 class="hero__title jello-horizontal">ice cream made with
                     <span class="hero__title--strong">passion</span>
                 </h1>
                         <a class="button__hero button__hero--red" href="#products">Products</a>
-                        <a class="button__hero button__hero--white" href="#howitsmade">How it’s made?</a>
-                        
+                        <a class="button__hero button__hero--white" href="#howitsmade">How it’s made?</a>     
             </div>
             <ul class="hero__indicators">
                 <li class="hero__item"><span class="hero__walue">16</span>cafes</li>
@@ -101,6 +99,7 @@
 <!-- buyform============================================ -->
 <div class="buyform__beckdrop is-hidden" data-buyform>
     <div class="buyform__modal">
+        <form class="buyform__form">
         <button type="button" class="buyform__close" data-buyform-close>
             <svg width="14px" height="14px" class="buyform__icon">
                 <use href="./images/symbol-defs.svg#btn-close"></use>
@@ -109,15 +108,15 @@
         <div class="buyform__container">
             <strong class="buyform__title">Make an order</strong>
             <label for="name">Name</label>
-            <input type="name" id="name" name="name" autocomplete="name" placeholder="Elizabeth">
+            <input class="buyform__input" type="text" id="name" name="name" autocomplete="on" placeholder="Elizabeth">
             <label for="phone">Phone number</label>
-            <input type="phone" id="phone" name="phone" autocomplete="tel" placeholder="+447111441177">
+            <input class="buyform__input" type="text" id="phone" name="phone" autocomplete="on" placeholder="+447111441177">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" placeholder="queenelizabeth@gmail.com">
+            <input class="buyform__input" type="text" id="email" name="email" autocomplete="on" placeholder="queenelizabeth@gmail.com">
             <label for="address">Delivery address</label>
-            <input type="address" id="address" name="address" placeholder=" London SW1A 1AA">
+            <input class="buyform__input" type="text" id="address" name="address" placeholder=" London SW1A 1AA">
 <label for="product">Product</label>
-<select name="product" id="product">
+<select class="buyform__input" name="product" id="product">
     <optgroup label="Ice cream">
         <option value="a1">chocolate</option>
         <option value="a2">vanila</option>
@@ -136,21 +135,21 @@
         <option value="b4">coconut</option>
     </optgroup>
         <optgroup label="Milkshake">
-            <option value="c1">chocolate</option>
-            <option value="c2">vanila</option>
-            <option value="c3">coconut</option>
-            <option value="c4">lemon</option>
-            <option value="c5">cherry</option>
-            <option value="c6">strawberry</option>
-            <option value="c7">banana</option>
-            <option value="c8">tropic</option>
-            <option value="c9">berries</option>
+        <option value="c1">chocolate</option>
+        <option value="c2">vanila</option>
+        <option value="c3">coconut</option>
+        <option value="c4">lemon</option>
+        <option value="c5">cherry</option>
+        <option value="c6">strawberry</option>
+        <option value="c7">banana</option>
+        <option value="c8">tropic</option>
+        <option value="c9">berries</option>
         </optgroup>
 </select>
-            <label for="quantity">Quantity</label>
-                <input id="quantity" type="number" name="height" min="1" max="100" step="1" value="1" />
-            
-            <button type="submit" class="button__main button__hero--red buyform__btn">Order</button>
+        <label for="quantity">Quantity</label>
+            <input class="buyform__input" id="quantity" type="number" name="height" min="1" max="100" step="1" value="1" />
+        <button type="submit" class="button__main button__hero--red buyform__btn">Order</button>
         </div>
+        </form>
     </div>
 </div>

@@ -39,6 +39,7 @@
   line-height: 1.14;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: $titleColor;
 
   text-align: center;
@@ -75,21 +76,21 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.62;
+  line-height: 1.58;
   color: $secondaryTextColor;
   text-align: start;
 
-  margin-bottom: 35px;
+  margin-bottom: 26px;
   z-index: 99999;
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    line-height: 1.76;
+    line-height: 1.78;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 32px;
 
     font-size: 16px;
-    line-height: 1.76;
+    line-height: 1.75;
 
     letter-spacing: 0.04em;
   }
@@ -98,22 +99,23 @@
   position: relative;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.62;
+  line-height: 1.58;
   color: $mainTextColor;
   text-align: start;
+  letter-spacing: 0.04em;
 
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background-color: transparent;
   z-index: 99999;
   @media screen and(min-width:768px) {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: 1.78;
 
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1200px) {
-    line-height: 194%;
+    line-height: 1.78;
 
     letter-spacing: 0.04em;
   }
@@ -164,8 +166,15 @@
 }
 .about__text-container {
   width: 100%;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    width: 220px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 465px;
   }
   @media screen and (min-width: 768px) {
     width: 334px;
@@ -245,6 +254,7 @@
   width: 7px;
   height: 10px;
 }
+
 // МОДАЛЬНЕ ВІКНО
 .about-us {
   position: fixed;
@@ -262,7 +272,7 @@
 }
 .about-us__container {
   position: absolute;
-  pointer-events: none;
+
   height: 500px;
   width: 800px;
   z-index: 999999;
@@ -281,11 +291,11 @@
   transition: opacity 5000ms linear;
   box-shadow: 0 0 10px 5px rgba(240, 92, 136, 0.3);
   @media screen and (max-width: 767px) {
-    height: 50%;
+    min-height: 50%;
     width: 80%;
   }
   @media screen and (max-width: 479px) {
-    height: 95%;
+    min-height: 95%;
     width: 100%;
   }
 }
@@ -348,21 +358,16 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: rotate 250ms ease-in;
+  transition: transform 250ms ease-in;
 
   top: 20px;
   right: 20px;
-  fill: pink;
 }
+
 .about-us__button:hover,
 .about-us__button:focus {
   background-color: gray;
-  // transform: rotate(180deg);
-}
-.about-us__button:hover .about-us__icon,
-.about-us__button:focus .about-us__icon {
-  fill: black;
-  transform: rotateZ(180deg);
+  transform: rotate(90deg);
 }
 .about-us.is-hidden {
   opacity: 0;
@@ -387,4 +392,17 @@
   letter-spacing: 0.04em;
 
   color: deeppink;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d41443;
+  border-radius: 20px;
+  border: 3px solid #ffb8ca;
 }

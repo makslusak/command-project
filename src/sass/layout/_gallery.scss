@@ -11,27 +11,15 @@
 
 .section__gallery {
   @media screen and (max-width: 767px) {
-    background-image: linear-gradient(
-      to bottom,
-      $primeryColor 31%,
-      $textWhiteColor 20%
-    );
+    background-image: linear-gradient(to bottom, $primeryColor 31%, $textWhiteColor 20%);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(
-      to bottom,
-      $primeryColor 55%,
-      $textWhiteColor 20%
-    );
+    background-image: linear-gradient(to bottom, $primeryColor 55%, $textWhiteColor 20%);
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: linear-gradient(
-      to bottom,
-      $primeryColor 29%,
-      $textWhiteColor 20%
-    );
+    background-image: linear-gradient(to bottom, $primeryColor 29%, $textWhiteColor 20%);
   }
 }
 
@@ -69,6 +57,12 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: transform 250ms ease-in;
+}
+
+.gallery__item:focus,
+.gallery__item:hover {
+  transform: scale(1.5);
 }
 
 .gallery__item--1 {

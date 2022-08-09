@@ -4,28 +4,35 @@
     <h2 class="about__title">how it’s made?</h2>
 
     <div class="about__container-position">
-      <picture>
-        <source
-          srcset="./images/about-desctop@1.png, ./images/about-desctop@1.png"
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="./images/about-tablets@1.png, ./images/about-tablets@2.png"
-          media="(min-width:768px)"
-        />
-        <source
-          scrset="./images/about.png,
-                       ./images/about@2.png"
-          media="(min-width:320px)"
-        />
-      </picture>
-      <img
-        class="about__img"
-        width="501px"
-        height="501px"
-        src="./images/about.png"
-        alt="cow with milk"
-      />
+      <div>
+        <picture>
+          <source
+            srcset="
+              ./images/about-desctop@1.png 1x,
+              ./images/about-desctop@1.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/about-tablets@1.png 1x,
+              ./images/about-tablets@2.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="./images/about.png 1x, ./images/about@2.png 2x"
+            media="(min-width:320px)"
+          />
+          <img
+            class="about__img"
+            width="501"
+            height="501"
+            src="./images/about.png"
+            alt="cow with milk"
+          />
+        </picture>
+      </div>
       <div class="about__text-container">
         <p class="about__text-pre about__text-img">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
