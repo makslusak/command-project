@@ -41,7 +41,7 @@
 }
 .button--clone {
   display: none;
-  @media screen and(min-width:768px) and(max-width:1199px) {
+  @media screen and(min-width:768px) and(max-width:1199.5px) {
     display: inline-flex;
   }
 }
