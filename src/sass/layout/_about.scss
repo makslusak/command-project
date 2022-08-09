@@ -97,14 +97,13 @@
   }
 }
 .about__text-after {
-  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
   color: $mainTextColor;
   text-align: start;
   letter-spacing: 0.04em;
-
+  max-width: 480px;
   margin-bottom: 16px;
   background-color: transparent;
   z-index: 99999;
@@ -140,7 +139,7 @@
   background-size: 100%;
   height: 100%;
   top: 64%;
-  width: 100vw;
+  width: 100%;
   left: 0;
   right: 0;
 
@@ -175,7 +174,7 @@
     flex-direction: column;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 465px;
+    max-width: 440px;
   }
   @media screen and (min-width: 768px) {
     width: 334px;
