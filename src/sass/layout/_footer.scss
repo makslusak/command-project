@@ -140,7 +140,12 @@
 }
 
 .footer__phone {
+  transition: all 250ms ease-in;
   color: #d41443;
+  &:hover,
+  &:focus {
+    color: #ffa5ba;
+  }
 }
 
 .footer__text--rights {
