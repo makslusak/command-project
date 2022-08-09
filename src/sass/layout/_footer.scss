@@ -156,12 +156,12 @@
 }
 
 .footer__text--color {
+  transition: color 250ms ease-in;
   color: #d41443;
 }
 
 .footer__icon {
   fill: #ffffff;
-  transition: all 250ms ease-in;
 }
 
 .footer__link {
@@ -172,6 +172,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms ease-in;
   &:hover,
   &:focus {
     background-color: #ecebeb;
