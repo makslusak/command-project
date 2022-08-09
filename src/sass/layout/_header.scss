@@ -45,8 +45,8 @@
     display: inline-flex;
   }
 }
-.burger__icon {
-}
+// .burger__icon {
+// }
 .desktop__nav {
   display: none;
   @media screen and(min-width: 1200px) {
@@ -57,6 +57,7 @@
 }
 .desktop__list {
   display: flex;
+  scroll-behavior: smooth;
 }
 .desktop__item:not(:last-child) {
   margin-right: 35px;
@@ -131,8 +132,8 @@
   align-self: flex-end;
   background-color: transparent;
 }
-.cross__icon {
-}
+// .cross__icon {
+// }
 
 .is-hidden {
   display: none;
