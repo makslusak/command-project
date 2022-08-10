@@ -40,6 +40,7 @@
   }
 }
 .button--clone {
+  cursor: pointer;
   display: none;
   @media screen and(min-width:768px) and(max-width:1199.5px) {
     display: inline-flex;
@@ -74,6 +75,7 @@
   }
 }
 .desktop__button {
+  cursor: pointer;
   display: none;
   @media screen and(min-width: 1200px) {
     display: flex;
@@ -172,6 +174,7 @@
 }
 
 .buyform__close {
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -192,6 +195,7 @@
 }
 
 .button__hero--red.buyform__btn {
+  cursor: pointer;
   width: 180px;
   align-self: center;
   margin-top: 40px;
